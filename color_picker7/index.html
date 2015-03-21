@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script language="javascript" src="../addons/p5.sound.js"></script>
+  <script src="../p5.js"></script>
+
+  <script src="jquery.js"></script>
+
+  <script src="bootstrap.js"></script>
+  <script src="sketchpost.js"></script>
+  <script src="sketch.js"></script>
+  <script src="p5.dom.js"></script>
+  <script src="tinycolor.js"></script>
+  
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+
+  <link rel="stylesheet" type="text/css" href= "style.css">
+
+  <link rel="stylesheet" type="text/css"
+  href= "bootstrap.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+	<div class="row header">
+		<div class="col-md-4">hi</div>
+		<div class="col-md-4">
+			<form id="frm1">
+				R number: <input type="number" name="Hue" min="1" max="100">
+				G number: <input type="number" name="Saturation" min="1" max="100">
+				B number: <input type="number" name="Brightness" min="1" max="100">
+
+				<select id="mySelect">
+
+					<option> Light </option>
+					<option> Dark  </option>
+				</select> </br>
+
+				<input type="button" onclick="submitPressed()" value="Submit2">
+			</form>
+		</div>
+		<div class="col-md-4">
+
+			<div id="accentBox"> Hi</div>
+		</div>
+	</div>
+
+
+	
+
+	<div class="row" id="sampleContainer">
+		<div class="col-md-1 left2"> left</div>
+		<div class="col-md-10" id="firstCanvas"></div>
+		<div class="col-md-1 right2"> right</div>
+	</div>
+
+
+
+	<div class="row">
+		<!-- <div class="col-md-1 left2"> Yellow </div> -->
+		<div class="col-md-12" id= "parentCanvas"> 
+
+			<div id="exampleSquares"></div>
+
+			<div id="interfaceHolder">
+				<div id="firstInterfaceBox"></div>
+
+			 </div>
+
+		</div>
+		<!-- <div class="col-md-1 right2"> green</div> -->
+	</div>
+
+</div>
+
+</body>
+</html>
